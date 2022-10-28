@@ -105,7 +105,7 @@ button {
     z-index: 1;
 }
 
-.content_btn:hover{
+.content_btn:hover {
     background: #E47209;
     cursor: pointer;
 }
@@ -157,4 +157,74 @@ button {
     font-size: 16px;
     line-height: 23px;
     text-transform: uppercase;
+}
+
+/** About section **/
+
+.about-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.about_subtitle {
+    color: #333B41;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.about_title {
+    color: #333B41;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57px;
+}
+
+.about_title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 178px;
+    width: 465px;
+}
+
+.about_title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.about_flower-pic {
+    position: absolute;
+    top: 860px;
+    left: 1548px;
+}
+
+.about-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    height: 723px;
+}
+
+.howItWorks {
+    color: #333B41;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.howItWorks-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 168px;
+    width: 465px;
 }
