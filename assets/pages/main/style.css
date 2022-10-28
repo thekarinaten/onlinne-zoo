@@ -3,6 +3,11 @@
     src: url(/assets/fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+
 body {
     margin: 0 auto;
 }
@@ -103,11 +108,14 @@ button {
     height: 54px;
     width: 300px;
     z-index: 1;
+    transition: transform .3s;
 }
 
 .content_btn:hover {
     background: #E47209;
     cursor: pointer;
+    transform: scale(1);
+    transition: .3s ease-in-out;
 }
 
 .content-wrapper {
@@ -124,9 +132,8 @@ button {
 
 .content-title {
     color: #FFFFFF;
-    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-family: 'Roboto Bold', 'Arial', 'Times New Roman', sans-serif;
     font-size: 106px;
-    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     line-height: 80px;
@@ -227,4 +234,144 @@ button {
     justify-content: space-between;
     height: 168px;
     width: 465px;
+}
+
+/** Animals section **/
+
+.animals-btn-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 235px;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.animals_btn_link {
+    text-decoration: none;
+}
+
+.animals_btn {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: none;
+    display: block;
+    height: 54px;
+    width: 300px;
+    z-index: 1;
+    transition: transform .3s;
+}
+
+.animals_btn:hover {
+    background: #E47209;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.card {
+    border: 1px solid #FE9013;
+    border-radius: 5px;
+    height: 426px;
+    position: relative;
+    transition: transform .3s;
+}
+
+.card-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    width: 338px;
+    margin: 0 auto;
+    transition: transform .3s;
+}
+
+.card-pic {
+    border-radius: 5px 5px 0 0;
+    height: 366px;
+    width: 366px;
+    transition: transform .3s;   
+}
+
+.card:hover .card-pic {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: .3s ease-in-out;
+}
+
+.card:hover .card-item{
+    justify-content: space-around;
+    cursor: pointer;
+    background: #c2c2c4;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    transition: .3s ease-in-out;
+    width: 345px;
+}
+
+.card:hover{
+    cursor: pointer;
+    height: 366px;
+    transition: .3s ease-in-out;
+}
+
+.card_title {
+    color: #000000;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.card_subtitle {
+    color: #000000;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.courusel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1160px;
+    height: 872px;
+    margin: 0 auto;
+}
+
+.courusel-btn {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 100px;
+    height: 62px;
+    width: 62px;
+    transition: .4s ease-in-out;
+}
+
+.courusel-btn:hover {
+    background: none;
+    background-color: #E47209;
+    cursor: pointer;
+    
+}
+
+.courusel-wrapper {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.palm-pic {
+    position: absolute;
+    top: 647px;
+    left: 0px;
+}
+
+.strelitzia-pic {
+    position: absolute;
+    top: 832px;
+    left: 1232px;
 }
