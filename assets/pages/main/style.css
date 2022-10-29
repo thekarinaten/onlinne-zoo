@@ -8,6 +8,11 @@
     src: url(/assets/fonts/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url(/assets/fonts/Roboto-Thin.ttf);
+}
+
 body {
     margin: 0 auto;
 }
@@ -541,4 +546,150 @@ button {
     background: #E47209;
     cursor: pointer;
     transition: .3s ease-in-out;
+}
+
+/** Testimonials Section **/
+
+.avatar {
+    border-radius: 100px;
+    padding-right: 10px;
+}
+
+.scrollbar {
+    background: radial-gradient(circle at 100% 100%, #f1f3f2 0, #f1f3f2 3px, transparent 3px) 0% 0%/5px 5px no-repeat,
+            radial-gradient(circle at 0 100%, #f1f3f2 0, #f1f3f2 3px, transparent 3px) 100% 0%/5px 5px no-repeat,
+            radial-gradient(circle at 100% 0, #f1f3f2 0, #f1f3f2 3px, transparent 3px) 0% 100%/5px 5px no-repeat,
+            radial-gradient(circle at 0 0, #f1f3f2 0, #f1f3f2 3px, transparent 3px) 100% 100%/5px 5px no-repeat,
+            linear-gradient(#f1f3f2, #f1f3f2) 50% 50%/calc(100% - 4px) calc(100% - 10px) no-repeat,
+            linear-gradient(#f1f3f2, #f1f3f2) 50% 50%/calc(100% - 10px) calc(100% - 4px) no-repeat,
+            linear-gradient(320deg, rgba(254,189,171,0.74) 13%, rgba(243,169,248,0.66) 44%, rgba(224,216,240,1) 86%);
+    border-radius: 5px;
+    height: 8px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scrollbar-thumb {
+    background-color: #E47209;
+    border-radius: 5px;
+    height: 6px;
+    width: 115px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    transition: transform .3s;
+}
+
+.scrollbar-thumb:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+    transform-origin: 10% 100%;
+}
+
+.testimonial {
+    height: 309px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 237px;
+}
+
+.testimonials {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.testimonials_btn {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    padding: 16px 0 16px;
+    transition: .4s ease-in-out;
+    text-transform: uppercase;
+}
+
+.testimonials_btn:hover {
+    background: none;
+    background-color: #E47209;
+    cursor: pointer;  
+}
+
+.testimonials-btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 1160px;
+    padding: 31px 0 180px;
+    margin: 0 auto;
+}
+
+.testimomials-card {
+    padding: 15px 16px 15px;
+    width: 268px;
+    height: 391px;
+    margin: 47px 0 21px;
+    background: radial-gradient(circle at 100% 100%, #f1f3f2 0, #f1f3f2 18px, transparent 18px) 0% 0%/20px 20px no-repeat,
+            radial-gradient(circle at 0 100%, #f1f3f2 0, #f1f3f2 18px, transparent 18px) 100% 0%/20px 20px no-repeat,
+            radial-gradient(circle at 100% 0, #f1f3f2 0, #f1f3f2 18px, transparent 18px) 0% 100%/20px 20px no-repeat,
+            radial-gradient(circle at 0 0, #f1f3f2 0, #f1f3f2 18px, transparent 18px) 100% 100%/20px 20px no-repeat,
+            linear-gradient(#f1f3f2, #f1f3f2) 50% 50%/calc(100% - 4px) calc(100% - 40px) no-repeat,
+            linear-gradient(#f1f3f2, #f1f3f2) 50% 50%/calc(100% - 40px) calc(100% - 4px) no-repeat,
+            linear-gradient(320deg, rgba(254,189,171,0.74) 13%, rgba(243,169,248,0.66) 44%, rgba(224,216,240,1) 86%, rgba(234,247,254,1) 100%);
+    border-radius: 20px;
+}
+
+.testimonial-subtitle {
+    color: #767474;
+    font-size: 15px;
+    font-family: 'Roboto Thin', 'Arial', 'Times New Roman', sans-serif;
+    line-height: 18px;
+    height: 310px;
+    width: 237px;
+
+}
+
+.testimomials-title {
+    color: #333B41;
+    font-size: 36px;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    line-height: 47px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 140px;
+}
+
+.user-location {
+    color: #BDBDBD;
+    font-size: 15px;
+    font-family: 'Roboto Thin', 'Arial', 'Times New Roman', sans-serif;
+    line-height: 18px;
+}
+
+.user-name {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    line-height: 20px;
+}
+
+.user-pic {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-leave {
+    position: relative;
+    width: 350px;
+    height: 290px;
+    overflow: hidden;
+    left: 1352px;
+    bottom: 290px;
+}
+
+.testimonials-container {
+    height: 920px;
 }
