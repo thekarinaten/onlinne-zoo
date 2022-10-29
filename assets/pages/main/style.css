@@ -277,7 +277,7 @@ button {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    padding-top: 5px;
     width: 338px;
     margin: 0 auto;
     transition: transform .3s;
@@ -373,8 +373,12 @@ button {
 
 /** Pick and feed section **/
 
+.empty-arrow {
+    padding-bottom: 62px;
+}
 
 .covid-title {
+    color: #333B41;
     font-size: 16px;
     font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
     font-weight: bold;
@@ -382,6 +386,7 @@ button {
 }
 
 .covid-subtitle {
+    color: #333B41;
     font-size: 16px;
     font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
     font-weight: 400;
@@ -390,13 +395,9 @@ button {
 }
 
 .covid-link {
-    color: #000000;
+    color: #333B41;
     text-decoration: none;
     border-bottom: 1px solid #E47209;
-}
-
-.pick_feed-info {
-    width: 1010px;
 }
 
 .pick_feed-wrapper {
@@ -419,14 +420,15 @@ button {
 }
 
 .pick_feed-subtitle {
+    color: #333B41;
     font-size: 24px;
     font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
     font-weight: 400;
     line-height: 29px;
+    padding-left: 320px;
 }
 
 .pick_feed-content {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -445,6 +447,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     height: 73px;
+    padding-left: 320px;
 }
 
 .pick-feed_section {
@@ -486,9 +489,17 @@ button {
     align-items: baseline;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 244px;
     width: 168px;
+}
+
+.payment-item_subtitle {
+    color: #333B41;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-weight: 500;
+    line-height: 23px;
+    padding-top: 30px;
 }
 
 .payment-pic_container{
