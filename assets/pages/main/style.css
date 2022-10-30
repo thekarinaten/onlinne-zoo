@@ -39,6 +39,7 @@ button {
 
 /** Intro-container: header **/
 
+
 .header {
     align-items: center;
     display: flex;
@@ -692,4 +693,172 @@ button {
 
 .testimonials-container {
     height: 920px;
+}
+
+/** Footer **/
+
+.footer {
+    background-color: #111115;;
+}
+
+.footer_btn {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    padding: 16px 0 16px;
+    transition: .4s ease-in-out;
+    text-transform: uppercase;
+}
+
+.footer_btn:hover {
+    background: none;
+    background-color: #E47209;
+    cursor: pointer;  
+}
+
+.footer-btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 1160px;
+    padding: 36px 0 44px;
+    margin: 0 auto;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.footer-content{
+    padding: 40px 0 50px;
+}
+
+.footer-head {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    height: 135px;
+    justify-content: space-between;
+}
+
+.footer-link_source {
+    text-decoration: none;
+}
+
+.footer-link-subtitle {
+    color: #FFFFFF;
+    font-family: 'Roboto Thin', 'Arial', 'Times New Roman', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 80%;
+}
+
+.link-title-donate {
+    color: #FFFFFF;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.submit-btn {
+    color: #000000;
+    height: 42px;
+    width: 130px;
+    margin-left: 10px;
+}
+
+.submit-btn:active {
+    color: #4B9200;
+    height: 42px;
+    width: 130px;
+}
+
+.subscribe {
+    color: #FFFFFF;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#subscribe {
+    background-color: #111115;;
+    border: 1px solid #E47209;
+    border-radius: 2px;
+    color: #BDBDBD;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    line-height: 23px;
+    padding: 10px;
+    margin-top: 14px;
+}
+
+#subscribe:focus {
+    border: none;
+    outline: 1px solid #4B9200;
+}
+
+#subscribe:valid + .submit-btn:active {
+    color: #4B9200;
+    border: 1px solid #4B9200;
+}
+
+#subscribe:invalid + .submit-btn:active {
+    color: #D31414;
+    border: 1px solid #D31414;
+}
+
+.submit-btn {   
+    color: #000000;
+    background-color: #F1F3F2;
+    border: 1px solid #333B41;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    line-height: 23px;
+    width: 130px;
+    height: 42px;
+}
+
+.socials-link {
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+    line-height: 23px;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.socials-name {
+    padding-left: 12px;
+}
+
+.socials-item:active .socials-icon{
+    cursor: pointer;
+    fill: #4B9200;
+    transition: .1s;
+}
+
+.socials-item:active .socials-name {
+    color: #4B9200;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.input-title {
+    color: #FFFFFF;
 }
